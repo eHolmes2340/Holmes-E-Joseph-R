@@ -8,7 +8,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div id="startGameDiv">
+            <h1>Hi-Low Game</h1>
         </div>
     </form>
 </body>
