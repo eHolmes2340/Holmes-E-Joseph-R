@@ -1,0 +1,22 @@
+﻿<asp:CompareValidator runat="server" Operator="DataTypeCheck" Type="Integer" 
+ ControlToValidate="ValueTextBox" ErrorMessage="Value must be a whole number" />
+
+
+
+ Required fields to Test 
+ 
+ For name check:
+				-  Make sure name can not be blank
+				-
+Max Guess Range:
+				- Number can not be a floating pojint number 
+				- This text box can not be blank 
+				- The number must be greater than 0 
+
+Guess Prompt   : 
+				- This can not be blank 
+				- number must be greater than 0 
+				- can not be a floating point number 
+
+Winner screen 
+				- must turn the background green 
