@@ -15,7 +15,7 @@ Description : In this file the user will enter a max guess range. The max guess 
     <style>
         body{
             text-align:center; 
-            background-color:grey; 
+            background-color:lightgray; 
         }
         h1{
             text-align:center; 
@@ -28,7 +28,16 @@ Description : In this file the user will enter a max guess range. The max guess 
     <hr />
     <form id="form1" runat="server">
         <div>
-           
+           <p id="greetByName" runat="server"></p>
+            <br />
+            <asp:RangeValidator runat="server" ID="range"  ControlToValidate="maxGuess" 
+                ErrorMessage="The min range must be greater than" 
+                Type="Integer"MinimumValue="0">
+            </asp:RangeValidator>
+            <asp:TextBox ID="maxRange" runat="server" />
+            <br />
+            <br />
+            <asp:Button runat="server" OnClick="submitMaxRange" Text="Submit" id="maxGuess" />
         </div>
     </form>
 </body>
