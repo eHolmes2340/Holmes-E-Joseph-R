@@ -28,12 +28,16 @@ Description : In this file the user will enter a max guess range. The max guess 
     <hr />
     <form id="form1" runat="server">
         <div>
-           <p id="greetByName" runat="server"></p>
+            <p id="greetByName" runat="server"></p>
+            <asp:RegularExpressionValidator ID='vldNumber' ControlToValidate='maxRange' ErrorMessage='This must be a whole number' ValidationExpression='(^([0-9]*|\d*\d{1}?\d*)$)' Runat='server'  ForeColor="Red">
+            </asp:RegularExpressionValidator>
             <br />
-            <asp:RangeValidator runat="server" ID="range"  ControlToValidate="maxGuess" 
-                ErrorMessage="The min range must be greater than" 
-                Type="Integer"MinimumValue="0">
-            </asp:RangeValidator>
+            <asp:RequiredFieldValidator id="RequiredFieldValidator1" runat="server"
+              ControlToValidate="maxRange"
+              ErrorMessage="***This text box can not be blank.***"
+              ForeColor="Red" >
+           </asp:RequiredFieldValidator>   
+            <br />
             <asp:TextBox ID="maxRange" runat="server" />
             <br />
             <br />

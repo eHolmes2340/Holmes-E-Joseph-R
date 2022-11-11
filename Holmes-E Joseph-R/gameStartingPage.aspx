@@ -22,9 +22,6 @@ Description : This file contains the Design side for the gameStarting page
         h1{
             color:orange;
         }
-        #errorMsg{
-            color:red; 
-        }
     </style>
 </head>
 <body>

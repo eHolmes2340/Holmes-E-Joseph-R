@@ -31,15 +31,22 @@ namespace Holmes_E_Joseph_R
         //Function   : submitMaxRange
         //Parameter  : object sender, EventArgs e
         //Returns    : void 
-        //Description: This function will submit the maxGuessRange
+        //Description: This function will submit the maxGuessRange and set the random number
         protected void submitMaxRange(object sender, EventArgs e)
         { 
            
             const int lowRange = 1;
             var rNum = new Random(); 
+
             
-            //add the max num
-            rNum.Next(lowRange,);
+            
+            //rNum.Next(lowRange,);
+
+             /* Items sending to the next page
+             * name
+             * maxGuess range
+             * random num
+             */
 
            
         }
