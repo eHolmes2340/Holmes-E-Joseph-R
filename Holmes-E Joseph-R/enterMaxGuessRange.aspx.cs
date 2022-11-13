@@ -43,7 +43,7 @@ namespace Holmes_E_Joseph_R
             string nameBeingSent = name;
 
             int random = r.Next(lowRange, maxNum);
-            string randomNumToString =r.ToString();
+            string randomNumToString =random.ToString();
 
             /* Items sending to the next page
             * name
@@ -51,7 +51,7 @@ namespace Holmes_E_Joseph_R
             * random num
             */
 
-            Session["nameTo"]=nameBeingSent.ToString();
+            Session["nameToGuessPage"]=nameBeingSent.ToString();
             Session["randomNum"] = randomNumToString.ToString();
             Session["maxNum"] = maxNumToString.ToString();
             Response.Redirect("guessPage.aspx");
