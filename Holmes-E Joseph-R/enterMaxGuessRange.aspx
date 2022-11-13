@@ -29,7 +29,7 @@ Description : In this file the user will enter a max guess range. The max guess 
     <form id="form1" runat="server">
         <div>
             <p id="greetByName" runat="server"></p>
-            <asp:RegularExpressionValidator ID='vldNumber' ControlToValidate='maxRange' ErrorMessage='This must be a whole number' ValidationExpression='(^([0-9]*|\d*\d{1}?\d*)$)' Runat='server'  ForeColor="Red">
+            <asp:RegularExpressionValidator ID='vldNumber' ControlToValidate='maxRange' ErrorMessage='This must be a whole number' ValidationExpression='(^\d+$)' Runat='server'  ForeColor="Red">
             </asp:RegularExpressionValidator>
             <br />
             <asp:RequiredFieldValidator id="RequiredFieldValidator1" runat="server"

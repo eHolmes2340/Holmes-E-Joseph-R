@@ -17,7 +17,7 @@ namespace Holmes_E_Joseph_R
 {
     public partial class enterMaxGuessRange : System.Web.UI.Page
     {
-       string name { get; set; }
+       public string name { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -36,19 +36,27 @@ namespace Holmes_E_Joseph_R
         { 
            
             const int lowRange = 1;
-            var rNum = new Random(); 
-
+            Random r = new Random();
+            int maxNum = Int32.Parse(maxRange.Text);
             
-            
-            //rNum.Next(lowRange,);
+            string maxNumToString=maxNum.ToString();
+            string nameBeingSent = name;
 
-             /* Items sending to the next page
-             * name
-             * maxGuess range
-             * random num
-             */
+            int random = r.Next(lowRange, maxNum);
+            string randomNumToString =r.ToString();
 
-           
+            /* Items sending to the next page
+            * name
+            * maxGuess range
+            * random num
+            */
+
+            Session["nameTo"]=nameBeingSent.ToString();
+            Session["randomNum"] = randomNumToString.ToString();
+            Session["maxNum"] = maxNumToString.ToString();
+            Response.Redirect("guessPage.aspx");
+
+
         }
     }
 }

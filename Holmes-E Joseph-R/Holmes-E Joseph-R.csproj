@@ -68,7 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="enterMaxGuessRange.aspx" />
-    <Content Include="TextFile1.txt" />
+    <Content Include="guessPage.aspx" />
+    <Content Include="testToRun.txt" />
     <Content Include="Web.config" />
     <Content Include="gameStartingPage.aspx" />
   </ItemGroup>
@@ -79,6 +80,13 @@
     </Compile>
     <Compile Include="enterMaxGuessRange.aspx.designer.cs">
       <DependentUpon>enterMaxGuessRange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="guessPage.aspx.cs">
+      <DependentUpon>guessPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="guessPage.aspx.designer.cs">
+      <DependentUpon>guessPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="gameStartingPage.aspx.cs">

@@ -13,7 +13,7 @@ Max Guess Range:
 				- This text box can not be blank 
 				- The number must be greater than 0 
 
-Guess Prompt   : 
+Guess Prompt: 
 				- This can not be blank 
 				- number must be greater than 0 
 				- can not be a floating point number 
